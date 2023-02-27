@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="FirmaMobile.Views.CenyDetailPage"
+             Title="{Binding Title}"
+             >
+    <ContentPage.ToolbarItems>
+        <ToolbarItem Text="Edit" Command="{Binding EditItemCommand}" />
+    </ContentPage.ToolbarItems>
+    <ScrollView VerticalOptions="Start">
+        <StackLayout Margin="20">
+            <Label Text="Id:" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="{Binding IdProduktu}" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Akronim, Nazwa:" FontSize="Medium" FontAttributes="Bold"  />
+            <Label Text="{Binding ProduktDane}" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Id Typu Ceny:" FontSize="Medium" FontAttributes="Bold"  />
+            <Label Text="{Binding IdTypuCeny}" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Typ Ceny:" FontSize="Medium" FontAttributes="Bold"  />
+            <Label Text="{Binding TypCenyNazwa}" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Wartosc:" FontSize="Medium" FontAttributes="Bold"  />
+            <Label Text="{Binding Wartosc}" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Waluta:" FontSize="Medium" FontAttributes="Bold"  />
+            <Label Text="{Binding Waluta}" FontSize="Medium" FontAttributes="Italic"/>
+            <Label Text="Czy aktywna:" FontSize="Medium" FontAttributes="Bold" />
+            <Label Text="{Binding CzyAktywna}" FontSize="Medium" FontAttributes="Italic"/>
+
+
+            <Button Text="Zamknij" Command="{Binding CancelCommand}" HorizontalOptions="FillAndExpand"></Button>
+        </StackLayout>
+    </ScrollView>
+
+</ContentPage>
